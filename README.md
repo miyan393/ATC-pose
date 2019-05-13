@@ -54,7 +54,7 @@ write_bottleneck_with_fine_tune.py
 
 模型融合的思路有前期融合和后期融合
 
-![](F:\ATC-pose\data\image\Fig2.png)
+![](https://github.com/miyan393/ATC-pose/blob/master/data/image/Fig2.png)
 
-![](F:\ATC-pose\data\image\Fig3.png)
+![](https://github.com/miyan393/ATC-pose/blob/master/data/image/Fig3.png)
 
