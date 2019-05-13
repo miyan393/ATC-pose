@@ -4,12 +4,12 @@
 
 ## 描述
 
-使用迁移学习方法检测空中交通管制员工作时的状态。
+使用迁移学习方法检测空中交通管制员工作时的状态。[参考了Wayne Wong关于驾驶员的项目](https://github.com/omnigeeker/mlnd_distracted_driver_detection)
 
 * 输入：一张640,480的RGB彩色图片
 * 输出：十种状态的概率
 
-状态列表：
+动作列表：
 
 * c0: 趴在桌子上睡觉
 * c1: 仰头睡
@@ -28,27 +28,33 @@
 
 ## 代码说明，依次执行以下步骤：
 
-### 1. 数据集读取代码
 
- 在keras-vgg16-visual-finetune.ipynb里
 
-### 2. 基准模型代码
+### 1. 基准模型代码
 
- keras-vgg16-visual-finetune.ipynb
+ vgg16.ipynb
 
-### 3. 单模型代码
+### 2. 单模型代码（后缀nde无数据增强，de数据增强）
 
-keras-resnet50-visual-finetune.ipynb
+inception_nde.ipydb 
 
-keras-inceptionV3-visual-finetune.ipynb
+inception_de.ipydb
 
-keras-xception-visual-finetune.ipynb
+Resnet50_nde.ipynb
+
+Xception_nde.ipynb
+
+### 3模型可视化示例
+
+hotmap.ipynb
 
 ### 4. 模型融合代码
 
-生成混合模型的输入；write_bottleneck_with_fine_tune.py
+write_bottleneck_with_fine_tune.py
 
-最终模型执行代码：main-finetune.ipynb
+模型融合的思路有前期融合和后期融合
 
+![](F:\ATC-pose\data\image\Fig2.png)
 
+![](F:\ATC-pose\data\image\Fig3.png)
 
